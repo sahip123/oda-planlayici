@@ -1,0 +1,61 @@
+:root {
+  --ink-navy: #16213f;
+  --ink-navy-deep: #0e1730;
+  --blueprint-line: #8fc1e3;
+  --paper: #f4f6f5;
+  --paper-dim: #e7ebe9;
+  --wood-accent: #d8a05c;
+  --wood-accent-deep: #b9814a;
+  --ink-slate: #4b5b6e;
+  --teal-accent: #4f9c8a;
+  --danger: #c0432f;
+
+  --font-display: var(--font-space-grotesk), "Arial Black", sans-serif;
+  --font-body: var(--font-plex-sans), "Segoe UI", Arial, sans-serif;
+  --font-mono: var(--font-plex-mono), "Courier New", monospace;
+}
+
+html {
+  height: 100%;
+  color-scheme: light;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  color: var(--ink-navy);
+  background: var(--paper);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
